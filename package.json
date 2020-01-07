@@ -1,0 +1,49 @@
+{
+  "name": "@imyoon/model-cli",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest",
+    "test-cov": "jest --coverage",
+    "build": "tsc --pretty",
+    "lint": "eslint --ext .js,.ts src test",
+    "lint:fix": "eslint --ext .js,.ts src test --fix"
+  },
+  "bin": {
+    "model-cli": "dist/bin/model-cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sfltmya/model-cli.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sfltmya/model-cli/issues"
+  },
+  "homepage": "https://github.com/sfltmya/model-cli#readme",
+  "devDependencies": {
+    "@types/jest": "^24.0.19",
+    "@typescript-eslint/eslint-plugin": "^2.4.0",
+    "@typescript-eslint/parser": "^2.4.0",
+    "@types/fs-extra": "^8.0.1",
+    "@types/inquirer": "^6.5.0",
+    "@types/node": "^12.12.3",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.4.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "commander": "^3.0.2",
+    "compressing": "^1.5.0",
+    "fs-extra": "^8.1.0",
+    "inquirer": "^7.0.0"
+  }
+}
